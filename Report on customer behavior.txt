@@ -1,0 +1,87 @@
+                                                              Report on                         
+                                                       Customer behavior analyzing 
+project  overview -
+This project is about analyzing shopping behavior of customer using transactional data from 3900 purchases across various purchases category 
+the goal is to uncover spending  pattern of customers ,customer segments ,products ,preferences ,and subscription behavior to guide strategy.
+
+Data summary -
+-Rows:3000
+-columns:18
+-customer demographics (Age , Gender, location ,subscription status)
+-purchase details (item purchase, category, Purchase amount, seasons ,size, color )
+-shopping behaviors(Discount Applied , promos codes used , previous purchase ,frequency of purchase , reviews rating ,shipping type.
+-missing data:37 value in review in review Rating column.
+
+Explanatory Data Analysing -using python we began with data preparation and cleaning in python
+-Data loading -import the data using pandas 
+import panda as pd
+import pd read cv/ excel/text (your dataset )
+-initial explorations :used df.info to check structure and df. describe() for summary status.
+-missing data handling check for null value or import missing value in the review rating column using the medium rating of each products
+-column standardisation :Rename columns to small case to better readability and documentation 
+
+Feature Engineering 
+-Create age-group column by using customer age 
+-create purchase frequency data column form purchase date
+-Data consistency  check verified if duplicates applied and promo code used  were relucted or drop promo code used.
+
+Data base integration  -connect Python database to MY SQL and load  the cleaned data frame  to MYSQL database for SQL analysis .
+-Data analysis -using MySQL we perform structural analysis in MySQL to answer key business question .
+-Revenue by gender- comparing total revenue generated  by male and female customer.
+Male	157890
+Female	75191
+-High spending discount  uses identified customer who use discount but still spending more above the average purchase amount.
+item purchase   discount rate
+Hat	        50.00
+Sneakers	49.66
+Coat	        49.07
+Sweater  	48.17
+Pants	        47.37
+-Top five product by rating -find product with highest product review rating.
+Itempurchase Average purchase rating
+Gloves	      3.86
+Sandals       3.84
+Boots	      3.82
+Hat	      3.8
+Skirt	      3.79
+-shipping type comparison :compare revenue by purchase amount by standard and express shipping .
+subscription status total customer  ave.spend   Total revenue
+No	            2847	   59.87	170436
+Yes	            1053	   59.49	62645
+
+-subscription vs non subscription :compare average sending and total  revenue across subscription .
+-subscription status      repeat buyers
+         Yes	           958
+          No	           2518
+-customer segment  by loyal ,Returning ,New according to their previous purchase.
+customer segment       No of customer
+Loyal	                  3116
+Returning	           701
+New	                    83
+
+-top 3 most purchase products with in each category?
+item rank    category          item purchase    total order
+1	     Accessories	Jewelry	        171
+2	     Accessories	Sunglasses	161
+3	     Accessories	Belt	        161
+1	        Clothing	Blouse	        171
+2	        Clothing	Pants	        171
+3	         Clothing	Shirt	        169
+1	        Footwear	Sandals	        160
+2	        Footwear	Shoes	        150
+3	        Footwear	Sneakers	145
+1	       Outerwear	Jacket	        163
+2	        Outerwear	Coat	        161
+
+-customer who are repeat buyer (more than 5 repeat purchase)also likely to subscribe?
+age group      total revenue
+young	        62143
+middle-aged	59197
+adults	        55978
+senior	        55763
+Business recommendation- 
+1)Boost subscription promote exclusive benefits from subscribers customer loyalty program
+2)Review discount policy  
+3)product positioning 
+4)targeted marketing.
+
