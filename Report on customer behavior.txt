@@ -80,8 +80,20 @@ middle-aged	59197
 adults	        55978
 senior	        55763
 Business recommendation- 
-1)Boost subscription promote exclusive benefits from subscribers customer loyalty program
-2)Review discount policy  
-3)product positioning 
-4)targeted marketing.
+ Recommendations (Building on Your Report)
+- Subscription Strategy
+- Since subscribers are more loyal, introduce tiered benefits (exclusive previews, faster shipping, loyalty points).
+- Target non-subscribers with personalized offers to convert them.
+- Female Customer Engagement
+- Female customers spend less overall. Consider targeted campaigns (bundles, fashion-focused promotions, influencer tie-ins) to boost engagement.
+- Discount Optimization
+- Discounts are driving high-value purchases. Instead of reducing them, strategically apply discounts to products with lower ratings to improve adoption.
+- Product Positioning
+- Highlight top-rated products (Gloves, Sandals, Boots) in- marketing campaigns.
+- Cross-sell accessories with clothing to increase basket size.
+- Age-Based Targeting
+- Younger customers are leading in revenue. Use social media campaigns and gamified loyalty programs to strengthen this segment.
+- For seniors, emphasize ease of use, trust, and comfort-focused products.
+ 
+
 
